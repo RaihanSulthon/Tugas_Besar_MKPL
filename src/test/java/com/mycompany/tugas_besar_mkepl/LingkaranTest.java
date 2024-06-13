@@ -10,7 +10,9 @@ public class LingkaranTest {
 
     @Test
     public void hitungKeliling() {
-        assertEquals(87.92, lingkaran.hitungKeliling(), 0);
+        Lingkaran lingkaran = new Lingkaran("Lingkaran A", 7);
+        double expectedKeliling = 2 * 3.1416 *7;
+        assertEquals(expectedKeliling, lingkaran.hitungKeliling(), 0.001);
     }
 
     @Test
